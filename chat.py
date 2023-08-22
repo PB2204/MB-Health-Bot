@@ -35,7 +35,7 @@ def chat():
         print(Fore.LIGHTBLUE_EX + 'User: ' + Style.RESET_ALL, end="")
         inp = input()
         if inp.lower() == 'quit':
-            print(Fore.GREEN + 'Pandora:' + Style.RESET_ALL,
+            print(Fore.GREEN + 'MB Health Bot:' + Style.RESET_ALL,
                   "Take care. See you soon.")
             break
 
