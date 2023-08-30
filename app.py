@@ -19,20 +19,20 @@ with open('intents.json') as file:
 # Define functions to load model, tokenizer, and label encoder
 
 
-@st.cache
+@st.cache_resource
 def load_model():
     model = keras.models.load_model('chat-model')
     return model
 
 
-@st.cache
+@st.cache_resource
 def load_tokenizer():
     with open('tokenizer.pickle', 'rb') as handle:
         tokenizer = pickle.load(handle)
     return tokenizer
 
 
-@st.cache
+@st.cache_resource
 def load_label_encoder():
     with open('label_encoder.pickle', 'rb') as enc:
         lbl_encoder = pickle.load(enc)
